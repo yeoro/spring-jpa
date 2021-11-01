@@ -1,0 +1,171 @@
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.hibernate.dialect.MySQL5InnoDBDialect;
+
+import jpql.Member;
+import jpql.MemberDTO;
+import jpql.MemberType;
+import jpql.Team;
+
+public class JpaMain {
+	
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		EntityManagerFactory enf = Persistence.createEntityManagerFactory("persistence-unit");
+		
+		EntityManager em = enf.createEntityManager();
+		
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		
+		try {
+			Team teamA = new Team();
+			teamA.setName("팀A");
+			em.persist(teamA);
+
+			Team teamB = new Team();
+			teamB.setName("팀B");
+			em.persist(teamB);
+			
+			Member member1 = new Member();
+			member1.setUsername("회원1");
+			member1.setTeam(teamA);
+			em.persist(member1);
+			
+			Member member2 = new Member();
+			member2.setUsername("회원2");
+			member2.setTeam(teamA);
+			em.persist(member2);
+			
+			Member member3 = new Member();
+			member3.setUsername("회원3");
+			member3.setTeam(teamB);
+			em.persist(member3);
+			
+			em.flush();
+			em.clear();
+			
+			// Member 클래스라는 타입 정보를 명시함
+//			TypedQuery<Member> query1 = em.createQuery("select m from Member m", Member.class);
+			
+			// String 클래스 명시
+//			TypedQuery<String> query2 = em.createQuery("select m.username, m.age from Member m", String.class);
+			
+			// 명확한 타입 정보를 받을 수 없을 때
+//			Query query3 = em.createQuery("select m.age, m.username from Member m");
+			 
+			// 파라미터 바인딩
+//			Member result = em.createQuery("select m from Member m where m.username = :username", Member.class)
+//										.setParameter("username", "member1")
+//										.getSingleResult();
+			
+			// Query 타입 조회
+//			List resultList = em.createQuery("select m.username, m.age from Member m")
+//					.getResultList();
+//			Object o = resultList.get(0);
+//			Object[] result = (Object[]) o;
+			
+			// Query[] 타입 조회
+//			List<Object[]> resultList = em.createQuery("select m.username, m.age from Member m")
+//					.getResultList();
+//			Object[] result = resultList.get(0);
+			
+			// new 명령어 조회
+//			List<MemberDTO> result = em.createQuery("select new jpql.MemberDTO(m.username, m.age) from Member m", MemberDTO.class)
+//				.getResultList();
+//			MemberDTO memberDTO = result.get(0);
+			
+			// 페이징
+//			List<Member> result = em.createQuery("select m from Member m order by m.age desc", Member.class)
+//				.setFirstResult(0)
+//				.setMaxResults(10)
+//				.getResultList();
+			
+			// 내부 조인
+//			String query = "select m from Member m inner join m.team t";
+//			List<Member> result = em.createQuery(query, Member.class)
+//					.getResultList();
+			
+			// 외부 조인
+//			String query = "select m from Member m left join Team t on m.username = t.name";
+			
+			// 타입 표현
+//			String query = "select m.username, 'She''s', true from Member m where m.type = jpql.MemberType.ADMIN";
+//			List<Object[]> result = em.createQuery(query)
+//					.getResultList();
+			
+			// 기본 CASE
+//			String query = "select " + 
+//							 "case when m.age <= 10 then '학생요금' " + 
+//							 	  "when m.age >= 60 then '경로요금' " +
+//							      "else '일반요금' " +
+//							      "end " +
+//						   "from Member m";
+//			List<String> result = em.createQuery(query, String.class)
+//					.getResultList();	
+			
+			// COALESCE
+//			String query = "select coalesce(m.username, '이름 없는 회원') from Member m";
+			
+			// NULLIF
+//			String query = "select nullif(m.username, '관리자') from Member m";
+//			List<String> result = em.createQuery(query, String.class)
+//					.getResultList();	
+			
+			// concat
+//			String query = "select 'a' || 'b' from Member m";
+			
+			// 사용자 정의 함수
+//			String query = "select function('group_concat', m.username) From Member m";
+//			String query = "select group_concat(m.username) From Member m";
+			
+			// 페치 조인
+//			String query = "select m From Member m join fetch m.team";
+//			String query = "select distinct t From Team t join fetch t.members";
+//			List<Team> result = em.createQuery(query, Team.class)
+//					.setFirstResult(0)
+//					.setMaxResults(1)
+//					.getResultList();	
+			
+			// 기본 키 사용
+//			String query = "select m from Member m where m = :member";
+//			Member m = em.createQuery(query, Member.class)
+//						.setParameter("member", member1)
+//						.getSingleResult();
+			
+			// 외래 키 사용
+//			String query = "select m from Member m where m.team = :team";
+//			List<Member> results = em.createQuery(query, Member.class)
+//					.setParameter("team", teamA)
+//					.getResultList();
+			
+			Member result = em.createNamedQuery("Member.findByUsername", Member.class)
+					.setParameter("username", "회원1")
+					.getSingleResult();
+			
+			
+			tx.commit();
+			
+		} catch (Exception e) {
+			tx.rollback();
+			e.printStackTrace();
+		} finally {
+			em.close();
+		}
+		
+		enf.close();
+	}
+}
