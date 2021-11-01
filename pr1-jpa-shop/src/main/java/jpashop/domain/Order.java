@@ -18,11 +18,14 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "ORDERS")
 @Data
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Order {
 
 	@Id @GeneratedValue
@@ -98,6 +101,8 @@ public class Order {
 //			totalPrice += oi.getTotalPrice();
 //		}
 //		return totalPrice;
+		
+		// java 1.8
 		return orderItems.stream()
 				.mapToInt(OrderItem::getTotalPrice)
 				.sum();
