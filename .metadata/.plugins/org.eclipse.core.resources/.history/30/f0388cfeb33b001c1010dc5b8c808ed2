@@ -1,0 +1,15 @@
+package jpashop.repository;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import jpashop.domain.Order;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter @Setter
+public class OrderSearch {
+	
+}

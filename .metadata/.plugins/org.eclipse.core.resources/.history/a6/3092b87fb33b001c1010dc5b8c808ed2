@@ -1,0 +1,19 @@
+package jpashop.repository;
+
+import javax.persistence.EntityManager;
+
+import jpashop.domain.Order;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+public class OrderSearch {
+	
+	private final EntityManager em;
+	
+	public void save(Order order) {
+		em.persist(order);
+	}
+	
+	
+}

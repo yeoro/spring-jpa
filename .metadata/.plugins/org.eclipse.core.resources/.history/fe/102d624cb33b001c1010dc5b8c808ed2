@@ -1,0 +1,5 @@
+package jpashop.repository;
+
+public class OrderSearch {
+
+}
