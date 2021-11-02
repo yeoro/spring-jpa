@@ -1,0 +1,30 @@
+package jpashop.service;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
+
+import jpashop.domain.Member;
+import jpashop.domain.item.Book;
+import jpashop.domain.item.Item;
+
+@SpringBootTest(properties = {"spring.config.location=classpath:application-test.yml"})
+@Transactional
+public class OrderServiceTest {
+	
+	@Test
+	public void 상품주문() throws Exception {
+		// given
+		Member member = new Member();
+		member.setUsername("회원1");
+		member.setAddress("서울", "경기", "123-123");
+		
+		Item item = new Book();
+		
+		
+		
+		// when
+		
+		// then
+	}
+}
