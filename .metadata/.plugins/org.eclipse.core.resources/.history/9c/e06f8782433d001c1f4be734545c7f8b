@@ -1,6 +1,6 @@
 <!doctype html>
 <html xlmns:th="http://www.thymeleaf.org">
-<head th:replace="fragements/header :: header">
+<head th:replace="fragments/header :: header">
 	<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 	<title>hello</title>
 </head >
