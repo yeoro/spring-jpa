@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<syncparticipants/>
+<syncparticipants>
+<participant displayName="Git (pr1-jpa-shop/src/main/resources)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1636013063035">
+<data forceFetch="false" root="false">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="pr1-jpa-shop/src/main/resources" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
+<mappings>
+<resources resourcePath="/pr1-jpa-shop/src/main/resources" resourceType="2"/>
+</mappings>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
+<gitSynchronizeData container="C:/STS/workspace/test-jpa/ex2-jpa-shop" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD">
+<includedPaths>
+<path path="C:/STS/workspace/test-jpa/pr1-jpa-shop/src/main/resources"/>
+</includedPaths>
+</gitSynchronizeData>
+</data>
+</participant>
+</syncparticipants>
