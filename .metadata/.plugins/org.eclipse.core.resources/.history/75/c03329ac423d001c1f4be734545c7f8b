@@ -1,0 +1,7 @@
+<!doctype html>
+<html xlmns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+	<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+	<title>hello</title>
+</head >
+</html>
