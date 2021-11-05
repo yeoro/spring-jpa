@@ -6145,3 +6145,6 @@ Binding(CTRL+D,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-05 13:39:07.400
 !MESSAGE executing callback sts4.classpath.OkdeyDpi SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-11-05 14:40:18.583
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

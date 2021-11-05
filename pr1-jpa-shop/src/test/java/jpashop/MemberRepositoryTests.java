@@ -24,7 +24,7 @@ public class MemberRepositoryTests {
 	public void testMember() throws Exception {
 		// given
 		Member member = new Member();
-		member.setUsername("memberA");
+		member.setName("memberA");
 
 		// when
 
