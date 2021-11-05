@@ -33,7 +33,7 @@ public class OrderController {
 		model.addAttribute("items", items);
 		
 		return "order/orderForm";
-	} 
+	}
 	
 	@PostMapping("/order")
 	public String order(@RequestParam("memberId") Long memberid, 
