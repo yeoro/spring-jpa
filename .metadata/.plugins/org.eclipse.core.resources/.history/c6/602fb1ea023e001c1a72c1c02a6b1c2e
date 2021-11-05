@@ -39,7 +39,6 @@ public class ItemService {
 		findItem.setPrice(price);
 		findItem.setName(name);
 		findItem.setStockQuantity(stockQuantity);
-		return findItem;
 	}
 	
 	/**

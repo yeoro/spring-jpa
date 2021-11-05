@@ -26,23 +26,6 @@ public class ItemService {
 	}
 	
 	/**
-	 * 상품 수정
-	 * @param itemId
-	 * @param name
-	 * @param price
-	 * @param stockQuantity
-	 * @return
-	 */
-	@Transactional
-	public Item updateItem(Long itemId, String name, int price, int stockQuantity) {
-		Item findItem = itemRepository.findOne(itemId);
-		findItem.setPrice(price);
-		findItem.setName(name);
-		findItem.setStockQuantity(stockQuantity);
-		return findItem;
-	}
-	
-	/**
 	 * 상품 조회
 	 * @param id
 	 * @return

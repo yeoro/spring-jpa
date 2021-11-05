@@ -25,21 +25,9 @@ public class ItemService {
 		itemRepository.save(item);
 	}
 	
-	/**
-	 * 상품 수정
-	 * @param itemId
-	 * @param name
-	 * @param price
-	 * @param stockQuantity
-	 * @return
-	 */
 	@Transactional
 	public Item updateItem(Long itemId, String name, int price, int stockQuantity) {
-		Item findItem = itemRepository.findOne(itemId);
-		findItem.setPrice(price);
-		findItem.setName(name);
-		findItem.setStockQuantity(stockQuantity);
-		return findItem;
+		
 	}
 	
 	/**
