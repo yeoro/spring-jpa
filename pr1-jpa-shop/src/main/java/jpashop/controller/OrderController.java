@@ -5,11 +5,14 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jpashop.domain.Member;
+import jpashop.domain.Order;
 import jpashop.domain.item.Item;
+import jpashop.repository.OrderSearch;
 import jpashop.service.ItemService;
 import jpashop.service.MemberService;
 import jpashop.service.OrderService;
@@ -41,5 +44,13 @@ public class OrderController {
 						@RequestParam("count") int count) {
 		orderService.Order(memberid, itemId, count);
 		return "redirect:/orders";
+	}
+	
+	@GetMapping("/orders")
+	public String orderList(@ModelAttribute("orderSearch") OrderSearch orderSearch, Model model) {
+		List<Order> orders = orderService.findOrders(orderSearch);
+		model.addAttribute("orders", orders);
+		
+		return "order/orderList";
 	}
 }
