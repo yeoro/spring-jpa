@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotEmpty;
 
 import lombok.Data;
 
@@ -19,6 +20,8 @@ public class Member {
 	@Id @GeneratedValue
 	@Column(name = "MEMBER_ID")
 	private Long id;
+	
+	@NotEmpty
 	private String name;
 	
 	@OneToMany(mappedBy = "member")
