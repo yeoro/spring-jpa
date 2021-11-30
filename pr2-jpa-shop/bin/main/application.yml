@@ -13,7 +13,7 @@ spring:
       
   jpa:
      hibernate:
-        ddl-auto: none 
+        ddl-auto: create 
      properties:
         hibernate:
 #           show_sql: true # hibernate가 생성하는 SQL을 콘솔에 출력, 실제 운영에서는 사용X
