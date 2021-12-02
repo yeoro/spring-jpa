@@ -22,4 +22,4 @@ spring:
 logging:
   level:
      org.hibernate.SQL: debug # hibernate가 생성하는 SQL이 로거를 통해 출력
-     org.hibernate.type: trace
+#     org.hibernate.type: trace
