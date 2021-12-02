@@ -1,15 +1,21 @@
 package jpashop.repository;
 
-import jpashop.domain.Order;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Join;
+import javax.persistence.criteria.JoinType;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
-import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.*;
-import java.util.ArrayList;
-import java.util.List;
+import jpashop.domain.Order;
 
 @Repository
 public class OrderRepository {
@@ -95,6 +101,15 @@ public class OrderRepository {
         TypedQuery<Order> query = em.createQuery(cq).setMaxResults(1000);
         return query.getResultList();
     }
-
+    
+    /**
+     * fetch join
+     */
+    public List<Order> findAllWithMemberDelivery() {
+    	return em.createQuery("select o from Order o" +
+    				   " join fetch o.member m" +
+    				   " join fetch o.delivery d", Order.class)
+    			.getResultList();
+    }
 }
 
