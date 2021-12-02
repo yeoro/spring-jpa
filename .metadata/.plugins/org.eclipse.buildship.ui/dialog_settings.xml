@@ -3,4 +3,8 @@
 	<section name="org.eclipse.buildship.ui.wizard.project.import">
 		<item key="project_location" value="C:\Users\sungsmo\Desktop\Spring\spring-jpa\pr1-jpa-shop"/>
 	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="project_location" value="C:\STS\workspace\test-jpa\pr2-jpa-shop-api"/>
+		<item key="use_default_location" value="true"/>
+	</section>
 </section>

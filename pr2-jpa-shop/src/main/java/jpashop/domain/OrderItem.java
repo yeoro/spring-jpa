@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jpashop.domain.item.Item;
 import lombok.AccessLevel;
 import lombok.Data;
@@ -22,6 +24,7 @@ public class OrderItem {
 	@Column(name = "ORDER_ITEM_ID")
 	private Long id;
 	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ORDER_ID")
 	private Order order;
