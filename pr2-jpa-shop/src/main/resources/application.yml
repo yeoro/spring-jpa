@@ -19,6 +19,7 @@ spring:
 #           show_sql: true # hibernate가 생성하는 SQL을 콘솔에 출력, 실제 운영에서는 사용X
            format_sql: true    
            default_batch_fetch_size: 100  
+#     open-in-view: false
             
 logging:
   level:
