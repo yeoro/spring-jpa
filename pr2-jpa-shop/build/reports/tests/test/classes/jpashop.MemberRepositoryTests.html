@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.959s</div>
+<div class="counter">0.010s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testMember()</td>
-<td class="success">0.959s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,18 +87,9 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:20:43.835 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:20:43.870 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:20:43.950 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [jpashop.MemberRepositoryTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-15:20:43.997 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [jpashop.MemberRepositoryTests]: class path resource [jpashop/MemberRepositoryTests-context.xml] does not exist
-15:20:43.998 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [jpashop.MemberRepositoryTests]: class path resource [jpashop/MemberRepositoryTestsContext.groovy] does not exist
-15:20:43.999 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [jpashop.MemberRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:20:44.126 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [jpashop.MemberRepositoryTests]
-15:20:44.433 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [jpashop.MemberRepositoryTests]: using defaults.
-15:20:44.436 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-15:20:44.497 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d61eccf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cc6460c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@52350abb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@681aad3b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a6f2363, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2427e004, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ebd56e9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@63f34b70, org.springframework.test.context.event.EventPublishingTestExecutionListener@641856, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b58ff9e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f66e802, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@56b78e55, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@76318a7d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2a492f2a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3277e499]
-15:20:44.505 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7adbd080 testClass = MemberRepositoryTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@41beb473 testClass = MemberRepositoryTests, locations = '{}', classes = '{class jpashop.Pr1JpaShopApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@13cf7d52, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b7ff809, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b20ca2b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1af146, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@674658f7, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@478db956], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-15:20:44.620 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+<pre>2021-12-20 13:09:20.451  INFO 19900 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [jpashop.MemberRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-20 13:09:20.458  INFO 19900 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-20 13:09:20.458  INFO 19900 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@523e019c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c10eb3a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49f32bcb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1af29a19, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@38624a3a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23b02f37, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73cdf5f9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7d619bcb, org.springframework.test.context.event.EventPublishingTestExecutionListener@57f83dc7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75937998, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@696d28ee, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18a349cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ea3491d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6012bee8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60b8c05c]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -108,69 +99,903 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.5)
 
-2021-10-07 15:20:45.537  INFO 13104 --- [    Test worker] jpashop.MemberRepositoryTests            : Starting MemberRepositoryTests using Java 11.0.9 on yeoro with PID 13104 (started by sungsmo in C:\Users\sungsmo\Desktop\Spring\spring-jpa\pr1-jpa-shop)
-2021-10-07 15:20:45.543  INFO 13104 --- [    Test worker] jpashop.MemberRepositoryTests            : No active profile set, falling back to default profiles: default
-2021-10-07 15:20:47.613  INFO 13104 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-07 15:20:47.662  INFO 13104 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
-2021-10-07 15:20:49.387  INFO 13104 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-07 15:20:49.605  INFO 13104 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2021-10-07 15:20:50.106  INFO 13104 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-10-07 15:20:50.507  INFO 13104 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-10-07 15:20:50.688  INFO 13104 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-10-07 15:20:50.801  INFO 13104 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-10-07 15:20:52.492 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : 
+2021-12-20 13:09:20.502  INFO 19900 --- [    Test worker] jpashop.MemberRepositoryTests            : Starting MemberRepositoryTests using Java 17 on HNH1128613N02 with PID 19900 (started by H1128613 in C:\STS\workspace\test-jpa\pr2-jpa-shop)
+2021-12-20 13:09:20.504  INFO 19900 --- [    Test worker] jpashop.MemberRepositoryTests            : No active profile set, falling back to default profiles: default
+2021-12-20 13:09:20.860  INFO 19900 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-20 13:09:20.930  INFO 19900 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 0 JPA repository interfaces.
+2021-12-20 13:09:21.533  INFO 19900 --- [    Test worker] c.g.g.b.j.d.p6spy.P6SpyConfiguration     : P6Spy modulelist is overridden, some p6spy configuration features will not be applied
+2021-12-20 13:09:21.809  INFO 19900 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-20 13:09:21.849 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BooleanType@6def0632
+2021-12-20 13:09:21.850 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BooleanType@6def0632
+2021-12-20 13:09:21.852 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@6def0632
+2021-12-20 13:09:21.853 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@6b3f4bd8
+2021-12-20 13:09:21.856 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@4fe8f2ae
+2021-12-20 13:09:21.857 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@77ea806f
+2021-12-20 13:09:21.858 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.ByteType@3d4ecc67
+2021-12-20 13:09:21.859 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.ByteType@3d4ecc67
+2021-12-20 13:09:21.860 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@3d4ecc67
+2021-12-20 13:09:21.862 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -&gt; org.hibernate.type.CharacterType@70d3cdbf
+2021-12-20 13:09:21.863 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -&gt; org.hibernate.type.CharacterType@70d3cdbf
+2021-12-20 13:09:21.863 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@70d3cdbf
+2021-12-20 13:09:21.864 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.ShortType@63de4fa
+2021-12-20 13:09:21.865 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.ShortType@63de4fa
+2021-12-20 13:09:21.866 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@63de4fa
+2021-12-20 13:09:21.866 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -&gt; org.hibernate.type.IntegerType@7b1a30e5
+2021-12-20 13:09:21.870 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -&gt; org.hibernate.type.IntegerType@7b1a30e5
+2021-12-20 13:09:21.871 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@7b1a30e5
+2021-12-20 13:09:21.872 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.LongType@1152900
+2021-12-20 13:09:21.873 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.LongType@1152900
+2021-12-20 13:09:21.874 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@1152900
+2021-12-20 13:09:21.875 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.FloatType@5ce3409b
+2021-12-20 13:09:21.875 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.FloatType@5ce3409b
+2021-12-20 13:09:21.875 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@5ce3409b
+2021-12-20 13:09:21.875 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.DoubleType@7e747037
+2021-12-20 13:09:21.875 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.DoubleType@7e747037
+2021-12-20 13:09:21.876 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@7e747037
+2021-12-20 13:09:21.876 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@5c5a91b4
+2021-12-20 13:09:21.876 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@5c5a91b4
+2021-12-20 13:09:21.876 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@634aa81e
+2021-12-20 13:09:21.877 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@634aa81e
+2021-12-20 13:09:21.877 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -&gt; org.hibernate.type.StringType@2c8ff67
+2021-12-20 13:09:21.877 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@2c8ff67
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@21be14c2
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@7afe0e67
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -&gt; org.hibernate.type.UrlType@2120bed
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@2120bed
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -&gt; org.hibernate.type.DurationType@fe42a09
+2021-12-20 13:09:21.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -&gt; org.hibernate.type.DurationType@fe42a09
+2021-12-20 13:09:21.879 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -&gt; org.hibernate.type.InstantType@99c4993
+2021-12-20 13:09:21.879 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -&gt; org.hibernate.type.InstantType@99c4993
+2021-12-20 13:09:21.879 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@632241f5
+2021-12-20 13:09:21.879 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@632241f5
+2021-12-20 13:09:21.880 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -&gt; org.hibernate.type.LocalDateType@305552d6
+2021-12-20 13:09:21.880 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -&gt; org.hibernate.type.LocalDateType@305552d6
+2021-12-20 13:09:21.880 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -&gt; org.hibernate.type.LocalTimeType@6f8667bb
+2021-12-20 13:09:21.881 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -&gt; org.hibernate.type.LocalTimeType@6f8667bb
+2021-12-20 13:09:21.881 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@643f6179
+2021-12-20 13:09:21.881 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@643f6179
+2021-12-20 13:09:21.882 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -&gt; org.hibernate.type.OffsetTimeType@5d767218
+2021-12-20 13:09:21.882 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -&gt; org.hibernate.type.OffsetTimeType@5d767218
+2021-12-20 13:09:21.882 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@7d3bf8db
+2021-12-20 13:09:21.882 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@7d3bf8db
+2021-12-20 13:09:21.907 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -&gt; org.hibernate.type.DateType@5b7308aa
+2021-12-20 13:09:21.907 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@5b7308aa
+2021-12-20 13:09:21.907 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -&gt; org.hibernate.type.TimeType@1934339
+2021-12-20 13:09:21.907 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@1934339
+2021-12-20 13:09:21.908 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@7babed9e
+2021-12-20 13:09:21.908 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@7babed9e
+2021-12-20 13:09:21.909 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@7babed9e
+2021-12-20 13:09:21.910 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@6d421fe
+2021-12-20 13:09:21.910 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -&gt; org.hibernate.type.CalendarType@2ba024cb
+2021-12-20 13:09:21.910 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@2ba024cb
+2021-12-20 13:09:21.910 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@2ba024cb
+2021-12-20 13:09:21.911 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@6684f7f2
+2021-12-20 13:09:21.911 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -&gt; org.hibernate.type.CalendarTimeType@5e385b6f
+2021-12-20 13:09:21.911 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -&gt; org.hibernate.type.LocaleType@11d2714a
+2021-12-20 13:09:21.912 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@11d2714a
+2021-12-20 13:09:21.912 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -&gt; org.hibernate.type.CurrencyType@18e4551
+2021-12-20 13:09:21.913 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@18e4551
+2021-12-20 13:09:21.914 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@6e068ac9
+2021-12-20 13:09:21.914 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@6e068ac9
+2021-12-20 13:09:21.916 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -&gt; org.hibernate.type.ClassType@76828577
+2021-12-20 13:09:21.916 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@76828577
+2021-12-20 13:09:21.922 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@36b53f08
+2021-12-20 13:09:21.923 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@36b53f08
+2021-12-20 13:09:21.924 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@7b211077
+2021-12-20 13:09:21.924 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -&gt; org.hibernate.type.BinaryType@734fbae3
+2021-12-20 13:09:21.925 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@734fbae3
+2021-12-20 13:09:21.926 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -&gt; org.hibernate.type.BinaryType@734fbae3
+2021-12-20 13:09:21.927 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@68e47e7
+2021-12-20 13:09:21.930 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@68e47e7
+2021-12-20 13:09:21.943 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@68e47e7
+2021-12-20 13:09:21.944 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -&gt; org.hibernate.type.RowVersionType@5409dfdd
+2021-12-20 13:09:21.948 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -&gt; org.hibernate.type.ImageType@20b54cfe
+2021-12-20 13:09:21.958 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -&gt; org.hibernate.type.CharArrayType@44d43cc9
+2021-12-20 13:09:21.959 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@44d43cc9
+2021-12-20 13:09:21.960 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -&gt; org.hibernate.type.CharArrayType@44d43cc9
+2021-12-20 13:09:21.960 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@45cd8607
+2021-12-20 13:09:21.962 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@45cd8607
+2021-12-20 13:09:21.965 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@45cd8607
+2021-12-20 13:09:21.965 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -&gt; org.hibernate.type.TextType@5dc7841c
+2021-12-20 13:09:21.983 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -&gt; org.hibernate.type.NTextType@18d30e7
+2021-12-20 13:09:21.989 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -&gt; org.hibernate.type.BlobType@41bb1f09
+2021-12-20 13:09:21.989 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@41bb1f09
+2021-12-20 13:09:21.990 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@12e5d3e1
+2021-12-20 13:09:21.990 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -&gt; org.hibernate.type.ClobType@4fbb1144
+2021-12-20 13:09:21.991 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@4fbb1144
+2021-12-20 13:09:21.993 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -&gt; org.hibernate.type.NClobType@8b670c0
+2021-12-20 13:09:21.993 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@8b670c0
+2021-12-20 13:09:21.994 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@1b8fa2fa
+2021-12-20 13:09:21.994 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@1d8e9d3e
+2021-12-20 13:09:21.994 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -&gt; org.hibernate.type.SerializableType@85ab964
+2021-12-20 13:09:21.994 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -&gt; org.hibernate.type.ObjectType@3eac2e8a
+2021-12-20 13:09:21.994 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@3eac2e8a
+2021-12-20 13:09:21.995 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@74997ca6
+2021-12-20 13:09:21.995 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@7a6078d
+2021-12-20 13:09:21.995 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@372c428
+2021-12-20 13:09:21.995 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@4458887d
+2021-12-20 13:09:21.996 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@7b1bb01c
+2021-12-20 13:09:21.996 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@4c364a9d
+2021-12-20 13:09:21.996 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@597084b7
+2021-12-20 13:09:21.996 DEBUG 19900 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@59ebe484
+2021-12-20 13:09:22.008  INFO 19900 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-20 13:09:22.141  INFO 19900 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-20 13:09:22.142  INFO 19900 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-20 13:09:22.182 DEBUG 19900 --- [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73ac7716] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@125ace20]
+2021-12-20 13:09:22.878 DEBUG 19900 --- [    Test worker] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum jpashop.domain.DeliveryStatus
+2021-12-20 13:09:22.879 DEBUG 19900 --- [    Test worker] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum jpashop.domain.OrderStatus
+2021-12-20 13:09:22.880 DEBUG 19900 --- [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73ac7716] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@59b8a801]
+2021-12-20 13:09:23.355 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category CASCADE 
+2021-12-20 13:09:23.361  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363361 | took 3ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists category CASCADE 
+
+    drop table if exists category CASCADE ;
+2021-12-20 13:09:23.361 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category_item CASCADE 
+2021-12-20 13:09:23.362  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363362 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists category_item CASCADE 
+
+    drop table if exists category_item CASCADE ;
+2021-12-20 13:09:23.362 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists delivery CASCADE 
+2021-12-20 13:09:23.364  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363364 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists delivery CASCADE 
+
+    drop table if exists delivery CASCADE ;
+2021-12-20 13:09:23.364 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists item CASCADE 
+2021-12-20 13:09:23.366  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363366 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists item CASCADE 
+
+    drop table if exists item CASCADE ;
+2021-12-20 13:09:23.366 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists member CASCADE 
-Hibernate: 
-    
+2021-12-20 13:09:23.369  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363369 | took 2ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
     drop table if exists member CASCADE 
-2021-10-07 15:20:52.497 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : 
+
+    drop table if exists member CASCADE ;
+2021-12-20 13:09:23.370 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists order_item CASCADE 
+2021-12-20 13:09:23.371  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363371 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists order_item CASCADE 
+
+    drop table if exists order_item CASCADE ;
+2021-12-20 13:09:23.371 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists orders CASCADE 
+2021-12-20 13:09:23.372  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363372 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists orders CASCADE 
+
+    drop table if exists orders CASCADE ;
+2021-12-20 13:09:23.372 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists hibernate_sequence
-Hibernate: 
-    
+2021-12-20 13:09:23.373  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363373 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
     drop sequence if exists hibernate_sequence
-2021-10-07 15:20:52.504 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
-Hibernate: create sequence hibernate_sequence start with 1 increment by 1
-2021-10-07 15:20:52.507 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : 
+
+    drop sequence if exists hibernate_sequence;
+2021-12-20 13:09:23.373 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+2021-12-20 13:09:23.374  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363374 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+2021-12-20 13:09:23.374 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    )
+2021-12-20 13:09:23.375  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363375 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    )
+
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    );
+2021-12-20 13:09:23.375 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    )
+2021-12-20 13:09:23.376  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363376 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    )
+
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    );
+2021-12-20 13:09:23.376 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    )
+2021-12-20 13:09:23.377  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363377 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    )
+
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    );
+2021-12-20 13:09:23.378 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    )
+2021-12-20 13:09:23.379  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363379 | took 1ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    )
+
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    );
+2021-12-20 13:09:23.380 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table member (
-       id bigint not null,
-        username varchar(255),
-        primary key (id)
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
     )
-Hibernate: 
-    
+2021-12-20 13:09:23.382  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363382 | took 2ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
     create table member (
-       id bigint not null,
-        username varchar(255),
-        primary key (id)
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
     )
-2021-10-07 15:20:52.513  INFO 13104 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-07 15:20:52.540  INFO 13104 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-07 15:20:53.367  WARN 13104 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-07 15:20:54.514  INFO 13104 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-10-07 15:20:55.879  INFO 13104 --- [    Test worker] jpashop.MemberRepositoryTests            : Started MemberRepositoryTests in 11.246 seconds (JVM running for 16.683)
-2021-10-07 15:20:56.230  INFO 13104 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@7adbd080 testClass = MemberRepositoryTests, testInstance = jpashop.MemberRepositoryTests@4700963e, testMethod = testMember@MemberRepositoryTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@41beb473 testClass = MemberRepositoryTests, locations = '{}', classes = '{class jpashop.Pr1JpaShopApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@13cf7d52, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b7ff809, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b20ca2b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1af146, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@674658f7, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@478db956], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@4769537a]; rollback [false]
-2021-10-07 15:20:56.560 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : 
+
+    create table member (
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
+    );
+2021-12-20 13:09:23.383 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    )
+2021-12-20 13:09:23.384  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363384 | took 1ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    )
+
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    );
+2021-12-20 13:09:23.392 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp,
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+2021-12-20 13:09:23.395  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363395 | took 3ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp,
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp,
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    );
+2021-12-20 13:09:23.395 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+2021-12-20 13:09:23.397  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363397 | took 2ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+
+    alter table category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category;
+2021-12-20 13:09:23.398 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+2021-12-20 13:09:23.401  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363401 | took 2ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+
+    alter table category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item;
+2021-12-20 13:09:23.401 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+2021-12-20 13:09:23.406  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363406 | took 4ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+
+    alter table category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category;
+2021-12-20 13:09:23.412 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+2021-12-20 13:09:23.414  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363414 | took 2ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+
+    alter table order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item;
+2021-12-20 13:09:23.415 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+2021-12-20 13:09:23.421  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363421 | took 6ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+
+    alter table order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders;
+2021-12-20 13:09:23.421 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+2021-12-20 13:09:23.425  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363425 | took 4ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+
+    alter table orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery;
+2021-12-20 13:09:23.426 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+2021-12-20 13:09:23.429  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363429 | took 3ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member;
+2021-12-20 13:09:23.430  INFO 19900 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-20 13:09:23.431 TRACE 19900 --- [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@59b8a801] for TypeConfiguration
+2021-12-20 13:09:23.431  INFO 19900 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-20 13:09:23.929 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-Hibernate: 
+2021-12-20 13:09:23.930  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363930 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.933 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2021-10-07 15:20:56.880 DEBUG 13104 --- [    Test worker] org.hibernate.SQL                        : 
+2021-12-20 13:09:23.935  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363934 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.935 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.936  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363936 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.936 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.936  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363936 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.937 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.937  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363937 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.938 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.939  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363939 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.939 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.940  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363940 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.942 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         member
-        (username, id) 
+        (city, street, zipcode, name, member_id) 
     values
-        (?, ?)
-Hibernate: 
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.942 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [서울]
+2021-12-20 13:09:23.942 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [1]
+2021-12-20 13:09:23.942 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [1111]
+2021-12-20 13:09:23.943 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [userA]
+2021-12-20 13:09:23.943 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [1]
+2021-12-20 13:09:23.943  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363943 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into member (city, street, zipcode, name, member_id) values (?, ?, ?, ?, ?)
+insert into member (city, street, zipcode, name, member_id) values ('서울', '1', '1111', 'userA', 1);
+2021-12-20 13:09:23.944 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-12-20 13:09:23.944 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JPA1 BOOK]
+2021-12-20 13:09:23.944 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [10000]
+2021-12-20 13:09:23.944 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [100]
+2021-12-20 13:09:23.944 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.944 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.945 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [2]
+2021-12-20 13:09:23.945  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363945 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values (?, ?, ?, ?, ?, 'B', ?)
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values ('JPA1 BOOK', 10000, 100, NULL, NULL, 'B', 2);
+2021-12-20 13:09:23.945 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-12-20 13:09:23.945 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JPA2 BOOK]
+2021-12-20 13:09:23.946 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [10000]
+2021-12-20 13:09:23.946 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [100]
+2021-12-20 13:09:23.946 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.946 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.946 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [3]
+2021-12-20 13:09:23.946  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363946 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values (?, ?, ?, ?, ?, 'B', ?)
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values ('JPA2 BOOK', 10000, 100, NULL, NULL, 'B', 3);
+2021-12-20 13:09:23.946 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.947 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [서울]
+2021-12-20 13:09:23.947 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [1]
+2021-12-20 13:09:23.947 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [1111]
+2021-12-20 13:09:23.947 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.947 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [5]
+2021-12-20 13:09:23.947  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363947 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into delivery (city, street, zipcode, status, delivery_id) values (?, ?, ?, ?, ?)
+insert into delivery (city, street, zipcode, status, delivery_id) values ('서울', '1', '1111', NULL, 5);
+2021-12-20 13:09:23.947 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.948 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2021-12-20 13:09:23.948 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
+2021-12-20 13:09:23.948 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2021-12-20T13:09:23.936328600]
+2021-12-20 13:09:23.948 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [ORDER]
+2021-12-20 13:09:23.948 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [4]
+2021-12-20 13:09:23.949  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363949 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into orders (delivery_id, member_id, order_date, status, order_id) values (?, ?, ?, ?, ?)
+insert into orders (delivery_id, member_id, order_date, status, order_id) values (5, 1, '2021-12-20T13:09:23.936+0900', 'ORDER', 4);
+2021-12-20 13:09:23.951 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.952 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-12-20 13:09:23.952 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2021-12-20 13:09:23.952 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4]
+2021-12-20 13:09:23.952 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [10000]
+2021-12-20 13:09:23.952 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [6]
+2021-12-20 13:09:23.952  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363952 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (?, ?, ?, ?, ?)
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (1, 2, 4, 10000, 6);
+2021-12-20 13:09:23.952 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.953 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2021-12-20 13:09:23.953 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2021-12-20 13:09:23.953 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4]
+2021-12-20 13:09:23.953 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [20000]
+2021-12-20 13:09:23.953 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [7]
+2021-12-20 13:09:23.955  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363954 | took 1ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (?, ?, ?, ?, ?)
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (2, 3, 4, 20000, 7);
+2021-12-20 13:09:23.955 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-12-20 13:09:23.955 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JPA1 BOOK]
+2021-12-20 13:09:23.955 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [10000]
+2021-12-20 13:09:23.955 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [99]
+2021-12-20 13:09:23.956 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.956 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.956 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [2]
+2021-12-20 13:09:23.956  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363956 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+update item set name=?, price=?, stock_quantity=?, author=?, isbn=? where item_id=?
+update item set name='JPA1 BOOK', price=10000, stock_quantity=99, author=NULL, isbn=NULL where item_id=2;
+2021-12-20 13:09:23.957 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JPA2 BOOK]
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [10000]
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [98]
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.957 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [3]
+2021-12-20 13:09:23.958  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363958 | took 0ms | statement | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+update item set name=?, price=?, stock_quantity=?, author=?, isbn=? where item_id=?
+update item set name='JPA2 BOOK', price=10000, stock_quantity=98, author=NULL, isbn=NULL where item_id=3;
+2021-12-20 13:09:23.961  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363961 | took 1ms | commit | connection 13| url jdbc:h2:tcp://localhost/~/jpashop
+
+;
+2021-12-20 13:09:23.962 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.962  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363962 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.963 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.963  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363963 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.964 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.965  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363965 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.966 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.967  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363967 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.968 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.969  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363969 | took 1ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.970 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.971  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363971 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.971 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2021-12-20 13:09:23.972  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363972 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2021-12-20 13:09:23.978 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
     insert 
     into
         member
-        (username, id) 
+        (city, street, zipcode, name, member_id) 
     values
-        (?, ?)
-2021-10-07 15:20:56.896  INFO 13104 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Committed transaction for test: [DefaultTestContext@7adbd080 testClass = MemberRepositoryTests, testInstance = jpashop.MemberRepositoryTests@4700963e, testMethod = testMember@MemberRepositoryTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@41beb473 testClass = MemberRepositoryTests, locations = '{}', classes = '{class jpashop.Pr1JpaShopApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@13cf7d52, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b7ff809, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4b20ca2b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1af146, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@674658f7, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@478db956], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.978 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [부산]
+2021-12-20 13:09:23.978 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [1]
+2021-12-20 13:09:23.978 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [1111]
+2021-12-20 13:09:23.978 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [userB]
+2021-12-20 13:09:23.979 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [8]
+2021-12-20 13:09:23.979  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363979 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into member (city, street, zipcode, name, member_id) values (?, ?, ?, ?, ?)
+insert into member (city, street, zipcode, name, member_id) values ('부산', '1', '1111', 'userB', 8);
+2021-12-20 13:09:23.979 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-12-20 13:09:23.979 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [SPRING1 BOOK]
+2021-12-20 13:09:23.980 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [20000]
+2021-12-20 13:09:23.980 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [200]
+2021-12-20 13:09:23.980 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.980 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.980 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [9]
+2021-12-20 13:09:23.981  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363981 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values (?, ?, ?, ?, ?, 'B', ?)
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values ('SPRING1 BOOK', 20000, 200, NULL, NULL, 'B', 9);
+2021-12-20 13:09:23.981 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-12-20 13:09:23.981 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [SPRING2 BOOK]
+2021-12-20 13:09:23.981 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [40000]
+2021-12-20 13:09:23.981 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [300]
+2021-12-20 13:09:23.982 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.982 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.982 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [10]
+2021-12-20 13:09:23.982  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363982 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values (?, ?, ?, ?, ?, 'B', ?)
+insert into item (name, price, stock_quantity, author, isbn, dtype, item_id) values ('SPRING2 BOOK', 40000, 300, NULL, NULL, 'B', 10);
+2021-12-20 13:09:23.982 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.983 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [부산]
+2021-12-20 13:09:23.983 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [1]
+2021-12-20 13:09:23.983 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [1111]
+2021-12-20 13:09:23.983 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.983 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [12]
+2021-12-20 13:09:23.988  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363988 | took 3ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into delivery (city, street, zipcode, status, delivery_id) values (?, ?, ?, ?, ?)
+insert into delivery (city, street, zipcode, status, delivery_id) values ('부산', '1', '1111', NULL, 12);
+2021-12-20 13:09:23.988 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.989 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [12]
+2021-12-20 13:09:23.989 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [8]
+2021-12-20 13:09:23.989 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2021-12-20T13:09:23.966248400]
+2021-12-20 13:09:23.989 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [ORDER]
+2021-12-20 13:09:23.989 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [11]
+2021-12-20 13:09:23.990  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363990 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into orders (delivery_id, member_id, order_date, status, order_id) values (?, ?, ?, ?, ?)
+insert into orders (delivery_id, member_id, order_date, status, order_id) values (12, 8, '2021-12-20T13:09:23.966+0900', 'ORDER', 11);
+2021-12-20 13:09:23.990 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.990 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
+2021-12-20 13:09:23.991 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [9]
+2021-12-20 13:09:23.991 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [11]
+2021-12-20 13:09:23.991 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [20000]
+2021-12-20 13:09:23.991 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [13]
+2021-12-20 13:09:23.991  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363991 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (?, ?, ?, ?, ?)
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (3, 9, 11, 20000, 13);
+2021-12-20 13:09:23.991 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-12-20 13:09:23.993 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [4]
+2021-12-20 13:09:23.993 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [10]
+2021-12-20 13:09:23.993 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [11]
+2021-12-20 13:09:23.993 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [40000]
+2021-12-20 13:09:23.993 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [14]
+2021-12-20 13:09:23.993  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363993 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (?, ?, ?, ?, ?)
+insert into order_item (count, item_id, order_id, order_price, order_item_id) values (4, 10, 11, 40000, 14);
+2021-12-20 13:09:23.994 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [SPRING1 BOOK]
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [20000]
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [197]
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.995 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [9]
+2021-12-20 13:09:23.996  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363996 | took 1ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+update item set name=?, price=?, stock_quantity=?, author=?, isbn=? where item_id=?
+update item set name='SPRING1 BOOK', price=20000, stock_quantity=197, author=NULL, isbn=NULL where item_id=9;
+2021-12-20 13:09:23.997 DEBUG 19900 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [SPRING2 BOOK]
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [40000]
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [296]
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2021-12-20 13:09:23.997 TRACE 19900 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [10]
+2021-12-20 13:09:23.998  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363998 | took 0ms | statement | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+update item set name=?, price=?, stock_quantity=?, author=?, isbn=? where item_id=?
+update item set name='SPRING2 BOOK', price=40000, stock_quantity=296, author=NULL, isbn=NULL where item_id=10;
+2021-12-20 13:09:23.998  INFO 19900 --- [    Test worker] p6spy                                    : #1639973363998 | took 0ms | commit | connection 14| url jdbc:h2:tcp://localhost/~/jpashop
+
+;
+2021-12-20 13:09:24.566  WARN 19900 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-20 13:09:25.104  INFO 19900 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-20 13:09:25.968  INFO 19900 --- [    Test worker] jpashop.MemberRepositoryTests            : Started MemberRepositoryTests in 5.505 seconds (JVM running for 19.447)
+2021-12-20 13:09:25.977  INFO 19900 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@16c3e494 testClass = MemberRepositoryTests, testInstance = jpashop.MemberRepositoryTests@4b682e71, testMethod = testMember@MemberRepositoryTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2f4c83f1 testClass = MemberRepositoryTests, locations = '{}', classes = '{class jpashop.MainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5b43fbf6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@749c877b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a3329b9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12bfd80d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@60f7cc1d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@420a85c4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@e38b953]; rollback [false]
+2021-12-20 13:09:25.983  INFO 19900 --- [    Test worker] p6spy                                    : #1639973365983 | took 1ms | commit | connection 15| url jdbc:h2:tcp://localhost/~/jpashop
+
+;
+2021-12-20 13:09:25.984  INFO 19900 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Committed transaction for test: [DefaultTestContext@16c3e494 testClass = MemberRepositoryTests, testInstance = jpashop.MemberRepositoryTests@4b682e71, testMethod = testMember@MemberRepositoryTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2f4c83f1 testClass = MemberRepositoryTests, locations = '{}', classes = '{class jpashop.MainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5b43fbf6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@749c877b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a3329b9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12bfd80d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@60f7cc1d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@420a85c4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
 </pre>
 </span>
 </div>
@@ -182,7 +1007,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 2021. 10. 7. 오후 3:20:57</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 2021. 12. 20. 오후 1:09:26</p>
 </div>
 </div>
 </body>

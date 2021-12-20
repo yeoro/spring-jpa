@@ -50,11 +50,11 @@ public class MemberServiceTest {
 		
 		// when
 		memberService.join(m1);
-		memberService.join(m2);
+//		memberService.join(m2);
 
 		// then
 //		assertThrows(IllegalStateException.class);
 		
-		fail("예외 발생");
+//		fail("예외 발생");
 	}
 }
