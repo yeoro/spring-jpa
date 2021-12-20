@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.buildship.ui.wizard.project.import">
-		<item key="project_location" value="C:\Users\sungsmo\Desktop\Spring\spring-jpa\pr1-jpa-shop"/>
+		<item key="project_location" value="C:\STS\workspace\test-jpa\pr3-spring-data-jpa"/>
+		<item key="apply_working_sets" value="false"/>
+		<list key="working_sets">
+		</list>
 	</section>
 	<section name="org.eclipse.buildship.ui.wizard.project.creation">
-		<item key="project_location" value="C:\STS\workspace\test-jpa\pr2-jpa-shop-api"/>
 		<item key="use_default_location" value="true"/>
+		<item key="apply_working_sets" value="false"/>
+		<item key="project_location" value="C:\STS\workspace\test-jpa\pr3-spring-data-jpa"/>
+		<list key="working_sets">
+		</list>
 	</section>
 </section>
