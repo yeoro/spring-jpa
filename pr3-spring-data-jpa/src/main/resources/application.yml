@@ -8,7 +8,7 @@ spring:
   datasource:
      url: jdbc:h2:tcp://localhost/~/datajpa
      username: sa
-     password: 
+     password: 1
      driver-class-name: org.h2.Driver
       
   jpa:
