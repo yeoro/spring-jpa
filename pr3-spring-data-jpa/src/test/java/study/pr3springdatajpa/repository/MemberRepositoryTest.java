@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -144,5 +145,18 @@ class MemberRepositoryTest {
 		for(Member m : result) {
 			System.out.println("Member = " + m);
 		}
+	}
+
+	@Test
+	public void testReturnType() {
+		Member m1 = new Member("AAA", 10);
+		Member m2 = new Member("BBB", 20);
+		memberRepository.save(m1);
+		memberRepository.save(m2);
+		
+		Member member = memberRepository.findMemberByUsername("AAA");
+		List<Member> members = memberRepository.findListByUsername("AAA");
+		Optional<Member> opmember = memberRepository.findOptionalByUsername("AAA");
+		
 	}
 }
