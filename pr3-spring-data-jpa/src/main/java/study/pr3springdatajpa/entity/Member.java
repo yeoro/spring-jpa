@@ -41,6 +41,12 @@ public class Member {
 			changeTeam(team);
 		}
 	}
+
+	public Member(String username, int age) {
+		super();
+		this.username = username;
+		this.age = age;
+	}
 	
 	public void changeTeam(Team team) {
 		this.team = team;
