@@ -2,7 +2,6 @@ package study.pr3springdatajpa.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +11,9 @@ import javax.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 
 import study.pr3springdatajpa.dto.MemberDto;
 import study.pr3springdatajpa.entity.Member;
@@ -157,6 +159,34 @@ class MemberRepositoryTest {
 		Member member = memberRepository.findMemberByUsername("AAA");
 		List<Member> members = memberRepository.findListByUsername("AAA");
 		Optional<Member> opmember = memberRepository.findOptionalByUsername("AAA");
+	}
+	
+	@Test
+	public void paging() {
+		//given 
+		memberRepository.save(new Member("member1", 10));
+		memberRepository.save(new Member("member2", 10));
+		memberRepository.save(new Member("member3", 10));
+		memberRepository.save(new Member("member4", 10));
+		memberRepository.save(new Member("member5", 10));
+
+		int age = 10;
+		PageRequest pageRequest = PageRequest.of(0, 3, Sort.by(Sort.Direction.DESC, "username"));
 		
+		//when
+		Page<Member> page = memberRepository.findByAge(age, pageRequest);
+//		Slice<Member> page = memberRepository.findByAge(age, pageRequest);
+		
+		Page<MemberDto> toMap = page.map(m -> new MemberDto(m.getId(), m.getUsername(), null));
+		
+		//then
+		List<Member> content = page.getContent();
+		
+		assertThat(content.size()).isEqualTo(3);
+//		assertThat(page.getTotalElements()).isEqualTo(5);
+		assertThat(page.getNumber()).isEqualTo(0);
+//		assertThat(page.getTotalPages()).isEqualTo(2);
+		assertThat(page.isFirst()).isTrue();
+		assertThat(page.hasNext()).isTrue();
 	}
 }
